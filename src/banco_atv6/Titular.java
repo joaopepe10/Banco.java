@@ -52,7 +52,7 @@ public class Titular {
         //ALGORITIMO PARA CALULAR IDADE
         LocalDate hoje = LocalDate.now(); //PEGA DIA DE HOJE
         LocalDate dataNascimento = LocalDate.of(getAno(),getMes(), getDia()); //RECEBE DIA, MES E ANO COMO PARAMETRO
-        setIdade(Period.between(dataNascimento, hoje).getYears()); //FAZA A SUBTRACAO DA DATA DE NASCIMENTO PELO DIA DE HJ, OBTENDO O ANO
+        setIdade(Period.between(dataNascimento, hoje).getYears()); //FAZA A SUBTRACAO DA DATA DE NASCIMENTO PELO DIA DE HJ, OBTENDO O A IDADE
     }
 
     public String imprimirDados(){
